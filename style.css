@@ -1,0 +1,184 @@
+.grid-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #F6F6F6;
+  grid-column-gap: 1em;
+  margin: 2em;
+  grid-auto-rows: 150px;
+}
+
+.grid-header>div {
+  padding: 1em;
+  background: #1B5375;
+  margin: 2em;
+}
+
+.first-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 1em;
+  grid-auto-rows: 630px;
+}
+
+.first-section .box-one {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: #F6F6F6;
+  margin: 2em;
+  grid-auto-rows: 280px;
+}
+
+.first-section .box-two {
+  grid-template-columns: 1fr;
+  background: #F6F6F6;
+  margin: 2em;
+  grid-auto-rows: 170px;
+}
+
+.sub-box-one {
+  padding: 1em;
+  background: #1B5375;
+  margin: 2em;
+}
+
+.first-section .box-two {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+}
+
+.first-section .box-two>div {
+  background: #1B5375;
+  margin: 1em;
+}
+
+.first-section .box-two>div {
+  background: #1B5375;
+  margin: 1em;
+}
+
+.first-section .box-two .fifth {
+  grid-column: 1/3;
+}
+
+.first-section .box-two .sixth {
+  grid-column: 3/5;
+}
+
+.first-section .box-two .seventh {
+  grid-column: 2/4;
+}
+
+.second-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1em;
+  margin: 2em;
+  grid-auto-rows: 150px;
+}
+
+.second-section>div {
+  background: #F6F6F6;
+}
+
+.second-section .box-two {
+  padding: 1em;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas:
+    'a b c d'
+    'e f g h'
+  ;
+}
+
+.second-section .box-two>div {
+  padding: 1em;
+  background: #1B5375;
+}
+
+.a {
+  grid-area: a;
+}
+
+.b {
+  grid-area: b;
+}
+
+.c {
+  grid-area: c;
+}
+
+.d {
+  grid-area: d;
+}
+
+.e {
+  grid-area: e;
+}
+
+.f {
+  grid-area: f;
+}
+
+.g {
+  grid-area: g;
+}
+
+.h {
+  grid-area: h;
+}
+
+.third-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 1em;
+  margin: 2em;
+  grid-auto-rows: 300px;
+}
+
+.third-section>div {
+  background: #F6F6F6;
+}
+
+.third-section .box-one {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+}
+
+.third-section .box-one>div {
+  background: #1B5375;
+  margin: 1em;
+}
+
+.fourth-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1em;
+  margin: 2em;
+  grid-auto-rows: 150px;
+}
+
+.fourth-section>div {
+  background: #F6F6F6;
+  grid-row: 1;
+}
+
+.fourth-section .box-two {
+  grid-row: 1/3;
+}
+
+.grid-footer {
+  display: grid;
+  background: #F6F6F6;
+  grid-column-gap: 1em;
+  margin: 2em;
+  grid-auto-rows: 150px;
+}
+
+.grid-footer>div {
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+}
